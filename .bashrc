@@ -205,6 +205,10 @@ _isroot=false
     alias la='ll -A'
     alias lm='la | less'
   #}}}
+
+  # SSH {{{
+    alias sanzang='ssh wapno@192.168.0.59 -p 223'
+#}}}
 #}}}
 # FUNCTIONS {{{
   # BETTER GIT COMMANDS {{{
