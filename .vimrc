@@ -1,4 +1,4 @@
-" vimrc v1 - wapno
+" vimrc v1.1 - wapno
 
 
 " some basic values
