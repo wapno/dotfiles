@@ -1,11 +1,8 @@
 !! font a geometrie
 
-URxvt.geometry: 80x31
-URxvt.font: xft:monospace:pixelsize=12
-!! Disable scrollbar
-
-[URxvt.scrollBar:false]
-
+URxvt.geometry: 80x30
+URxvt.font: xft:inconsolata:pixelsize=16:hinting=true:antialias=true
+URxvt.scrollBar: false
 !! copy paste do clipboardu
 
 URxvt.perl-ext-common: default,matcher
