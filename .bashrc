@@ -69,7 +69,7 @@ export PROMPT_DIRTRIM=2
 
 # Regular aliases
 alias ffs='sudo "$BASH" -c "$(history -p !!)"'
-alias bejvalky='ssh wapno@bejvalky.com'
+alias bejvalky='ssh wapno@bejvalky.cz'
 
 # Git
 ## Git aliases
