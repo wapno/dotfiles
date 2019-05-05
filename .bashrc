@@ -56,7 +56,7 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[32m\][\[\e[m\]\u\[\e[32m\]@\[\e[m\]\h\w\[\e[32m\]]\[\e[m\]\[\e[35m\]\`parse_git_branch\`\[\e[m\]\\$ "
-
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 
 
@@ -71,6 +71,11 @@ export PROMPT_DIRTRIM=2
 alias ffs='sudo "$BASH" -c "$(history -p !!)"'
 alias bejvalky='ssh wapno@bejvalky.cz'
 
+#ls
+alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+alias pins='ping seznam.cz'
+alias runelite="java -jar /usr/local/bin/RuneLite.jar"
 # Git
 ## Git aliases
 alias g='git'
