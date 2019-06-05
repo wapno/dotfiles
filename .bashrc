@@ -1,5 +1,8 @@
 # .bashrc
 
+# sys var
+export EDITOR='vim'
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
   . /etc/bashrc
@@ -76,7 +79,7 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[32m\][\[\e[m\]\u\[\e[32m\]@\[\e[m\]\h\w\[\e[32m\]]\[\e[m\]\[\e[35m\]\`parse_git_branch\`\[\e[m\]\\$ "
-PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 
 
@@ -90,12 +93,15 @@ export PROMPT_DIRTRIM=2
 # Regular aliases
 alias ffs='sudo "$BASH" -c "$(history -p !!)"'
 alias bejvalky='ssh wapno@bejvalky.cz'
-
+alias discworld='wine /home/wapno/Games/MUSHclient/MUSHclient.exe'
 #ls
 alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
 alias pins='ping seznam.cz'
 alias runelite="java -jar /usr/local/bin/RuneLite.jar"
+alias cs="setxkbmap cs"
+alias us="setxkbmap us"
+alias activate="source bin/activate" # activate env inside project dir
 # Git
 ## Git aliases
 alias g='git'
@@ -125,3 +131,5 @@ alias gcp='git cherry-pick'
 alias gpoh='git push origin HEAD'
 alias grom='git rebase origin/master'
 alias gcd='cd ~/repos/'
+
+# after login script
